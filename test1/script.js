@@ -1,23 +1,23 @@
-const selectElement = document.querySelector('#language-selector'); // получаем элемент <select>
-const enElements = document.querySelectorAll('.en'); // получаем все элементы с классом .en
-const uaElements = document.querySelectorAll('.ua'); // получаем все элементы с классом .ua
+const selectElement = document.querySelector('#language-selector');
+const enElements = document.querySelectorAll('.en');
+const uaElements = document.querySelectorAll('.ua');
 
-// устанавливаем начальные значения стилей
+
 enElements.forEach((el) => el.style.display = 'block');
 uaElements.forEach((el) => el.style.display = 'none');
 
-selectElement.addEventListener('change', (event) => { // добавляем обработчик события на изменение значения в <select>
-  if (event.target.value === 'en') { // если выбрано значение "en"
-    enElements.forEach((el) => el.style.display = 'block'); // показываем все элементы с классом .en
-    uaElements.forEach((el) => el.style.display = 'none'); // скрываем все элементы с классом .ua
-  } else if (event.target.value === 'ua') { // если выбрано значение "ua"
-    enElements.forEach((el) => el.style.display = 'none'); // скрываем все элементы с классом .en
-    uaElements.forEach((el) => el.style.display = 'block'); // показываем все элементы с классом .ua
+selectElement.addEventListener('change', (event) => { 
+  if (event.target.value === 'en') { 
+    enElements.forEach((el) => el.style.display = 'block'); 
+    uaElements.forEach((el) => el.style.display = 'none'); 
+  } else if (event.target.value === 'ua') { 
+    enElements.forEach((el) => el.style.display = 'none'); 
+    uaElements.forEach((el) => el.style.display = 'block'); 
   }
 });
 $(document).ready(function() {
   $('form').submit(function(e) {
-    e.preventDefault(); // предотвратить отправку формы по умолчанию
+    e.preventDefault(); 
     $.ajax({
       url: 'process_form.php',
       type: 'POST',
@@ -32,10 +32,10 @@ $(document).ready(function() {
   });
 });
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
+
   direction: 'horizontal',
   loop: true,
-  // Navigation arrows
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
