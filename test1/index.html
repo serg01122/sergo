@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MY TEST.2023</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo en">MY TEST.<span class="beriz-color">2023</span></a>
+				<a href="" class="header__logo ua">МІЙ ТЕСТ.<span class="beriz-color">2023</span></a>
+				<nav class="header__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#111" class="menu__link en">About me</a>
+							<a href="#111" class="menu__link ua">Про мене</a>
+						</li>
+						<li class="menu__item">
+							<a href="#222" class="menu__link en">Slider</a>
+							<a href="#222" class="menu__link ua">Слайдер</a>
+						</li>
+						<li class="menu__item">
+							<a href="#333" class="menu__link en">Contact</a>
+							<a href="#333" class="menu__link ua">Контакти</a>
+						</li>
+					</ul>
+				</nav>
+				<select id="language-selector">
+					<option value="en" selected>English</option>
+					<option value="ua">УкрaЇнська</option>
+				</select>
+			</div>
+		</header>
+		<main class="page">
+			<section class="first-block">
+				<div class="first-block__container">
+					<div class="first-block__column">
+						<h1 class="first-block__title en"><span class="beriz-color">Wellcome!</span><br> good music to start</h1>
+						<h1 class="first-block__title ua"><span class="beriz-color">Вітаю!</span><br> гарна музика для початку</h1>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/7w9tV7Gf8pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+					<div class="first-block__column form-column">
+						<h2 id="my-form-title" class="first-block__form-label en">This is my form</h2>
+						<h2 id="my-form-title" class="first-block__form-label ua">Це моя форма</h2>
+						<form action="" method="POST" class="first-block__form">
+							<input placeholder="Name" name="user_name" type="text" class="first-block__input" required>
+							<input placeholder="Surname" name="user_surname" type="text" class="first-block__input" required>
+							<input placeholder="Mobile nomber" name="user_phone" type="tel" class="first-block__input"required>
+							<input placeholder="E-mail" name="user_email" type="email" class="first-block__input"required>
+							<button type="submit" class="first-block__submit-button">SEND A REQUEST</button>
+							<div class="checkbox-pv-wraper">
+								<input id="forAgreement" checked type="checkbox" class="agree-pv" name="agreement">
+								<label for="forAgreemen" class="pv-label"><span>I consent to the collection of my email address for the purpose of receiving commercial offers that we believe will be of interest to you, on behalf of the companies and industries detailed in our Terms of Use and Privacy Policy.</span></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+				<section id="111" class="second-block">
+					<div class="second-block__container-title en">
+						<h2 class="second-block__title">A little <span class="beriz-color">about me</span></h2>
+					</div>
+					<div class="second-block__container-title ua">
+						<h2 class="second-block__title">Трохи <span class="beriz-color">про мене</span></h2>
+					</div>
+					<div class="second-block__container-1">
+						<div class="second-block__cont-1-column-1">
+							<p class="second-block__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias rerum, recusandae vel! Aspernatur iure quasi, eaque! Hic ullam dolor expedita fugit, nesciunt. Labore blanditiis, dolorem aperiam, ex, at sint impedit saepe iure fuga numquam pariatur architecto quas eos ipsa mollitia.</p>
+							<img src="img/Group 100.png" alt="" class="second-block__img">
+						</div>
+						<div class="second-block__cont-1-column-2">
+							<p class="second-block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore qui dolorem dolor cumque placeat rem non aliquam fugiat quidem explicabo expedita possimus, fuga quis tenetur unde blanditiis modi nulla nobis natus iste. Cum soluta minus non! Molestiae, labore, dolorum. Totam, odio distinctio excepturi, quibusdam doloribus autem porro, culpa id iure illum praesentium voluptatem impedit aperiam. Recusandae facilis impedit consectetur?</p>
+							<h3 class="second-block__cont-1-title en"><span class="beriz-color">World leader</span> in website development</h3>
+							<h3 class="second-block__cont-1-title ua"><span class="beriz-color">Cвітовий лідер</span> у веб-розробці</h3>
+						</div>
+						<div class="second-block__cont-1-column-3">
+							<img src="img/Group 99.png" alt="" class="second-block__img">
+						</div>
+					</div>
+					<div class="second-block__container-title-2">
+						<h2 class="second-block__title-2 en">TEST<span class="beriz-color">.2023</span> in numbers</h2>
+						<h2 class="second-block__title-2 ua">ТЕСТ<span class="beriz-color">.2023</span> в цифрах</h2>
+					</div>
+					<div class="second-block__container-2">
+						<div class="second-block__cont-2-column">
+							<h4 class="second-block__prem">+7585</h4>
+						</div>
+						<div class="second-block__cont-2-column">
+							<h4 class="second-block__prem">+35564</h4>
+						</div>
+						<div class="second-block__cont-2-column">
+							<h4 class="second-block__prem">+74353</h4>
+						</div>
+					</div>
+				</section>
+				<section id="222" class="slider-block">
+					<div class="slider-block__container">
+						<h2 class="slider-block__title en"><span class="beriz-color">slider</span> for example</h2>
+						<h2 class="slider-block__title ua"><span class="beriz-color">Cлайдер</span> для прикладу</h2>
+						<div class="swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div class="swiper__img-wrap">
+										<img src="img/Group 9.png" alt="" class="swiper__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__img-wrap">
+										<img src="img/Group 10.png" alt="" class="swiper__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="swiper__img-wrap">
+										<img src="img/Group 11.png" alt="" class="swiper__img">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</section>
+			</main>
+			<footer id="333" class="footer">
+				<div class="footer__container">
+					<h2 class="footer__name en">SERGEY</h2>
+					<h2 class="footer__name ua">СЕРГІЙ</h2>
+					<a href="tel:+380681537400" class="footer__phone">+38 (068) 153-74-00</a>
+					<a href="mailto:sergeylyashenko00@gmail.com" class="footer__email">sergeylyashenko00@gmail.com</a>
+				</div>
+			</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+	</html>
